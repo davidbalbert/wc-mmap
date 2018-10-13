@@ -139,7 +139,7 @@ main(int argc, char *argv[])
     }
   }
 
-  if (cflag == 0 && lflag == 0 && wflag == 0) {
+  if (!cflag && !lflag && !wflag) {
     cflag = 1;
     lflag = 1;
     wflag = 1;
